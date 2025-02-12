@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#loading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#user-info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#user-info h2 {
+    text-align: center;
+    color: #333;
+}
+
+#user-info p {
+    text-align: center;
+    font-size: 16px;
+}
+
+#profile-link {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+#profile-link:hover {
+    text-decoration: underline;
+}
+
+#repos-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#repos-list li {
+    background: #f8f9fa;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#repos-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+#repos-list a:hover {
+    text-decoration: underline;
+}

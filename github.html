@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GitHub Data Explorer</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Search Username</h1>
+		<div class="search-box">
+			<input type="text" id="username" placeholder="Enter GitHub username"> <br>
+			<button onclick="fetchGitHubUser()">Search</button>
+		</div>
+
+		<div id="loading" class="hidden">
+			<p>Loading...</p>
+		</div>
+
+		<div id="user-info" class="hidden">
+			<img id="profile-pic" class="profile-pic" alt="Profile Picture">
+			<h2 id="name"></h2>
+			<p id="bio"></p>
+			<p><strong>Public Repositories:</strong> <span id="repos"></span></p>
+			<p><strong>Followers:</strong> <span id="followers"></span></p>
+			<p><strong>Following:</strong> <span id="following"></span></p>
+			<a id="profile-link" href="#" target="_blank">Visit Profile</a>
+
+			<h4>Recent Repositories:</h4>
+				<ul id="repos-list"></ul>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
